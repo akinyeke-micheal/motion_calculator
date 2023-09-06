@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "EQUATION_OF_MOTION.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+    "git.ignoreLimitWarning": true,
+    "C_Cpp.dimInactiveRegions": false
+}
