@@ -47,5 +47,6 @@ The program includes custom functions for performing the motion calculations. Th
 
 Overall, this program offers a user-friendly interface for solving physics problems related to motion. Users can select the type of motion and the specific calculation they want to perform, input the necessary data, and receive calculated results. The program's structured approach and use of custom functions make it an effective tool for learning and solving motion-related problems.
 -----------------------------------------------------------------------
+NOTE !! to be able to compile this program ,link with the math library 
 
 
