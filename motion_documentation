@@ -1,0 +1,51 @@
+File: MOTION.C
+Author: AKINYEKE MICHEAL OLAKUNLE
+Date: SEPTEMBER 6, 2023
+Description: MOTION CALCULATION PROGRAM
+
+This program is designed to compute and solve problems related to both linear motion and projectile motion. It interacts with the user to collect input data and provides solutions for a range of problems. The program covers calculations such as velocity, acceleration, initial velocity, time, distance, maximum horizontal range, horizontal range, total time of flight, time to reach maximum height, and maximum height for both linear and projectile motions.
+
+The program is divided into two main sections:
+1. Linear Motion Calculation
+2. Projectile Motion Calculation
+
+Header File: motion.h
+-----------------------
+The program includes an external header file named "motion.h." This header file contains all the function prototypes used in the program, allowing for better organization and separation of code.
+
+Global Variables:
+-----------------
+This program does not use global variables, which promotes good programming practice.
+
+Linear Motion Calculation:
+-------------------------
+If the user selects "1" from the main menu, the program enters the linear motion calculation section. Here, the user can choose from various linear motion calculations:
+
+1. Distance
+2. Velocity
+3. Acceleration
+4. Time
+5. Initial Velocity
+
+The program guides the user through each calculation, prompting for specific input values and displaying the calculated results.
+
+Projectile Motion Calculation:
+-------------------------------
+If the user selects "2" from the main menu, the program enters the projectile motion calculation section. Similar to linear motion, the user can choose from various projectile motion calculations:
+
+1. Maximum Horizontal Range
+2. Horizontal Range
+3. Total Time of Flight
+4. Time to Reach Maximum Height
+5. Maximum Height
+
+For each selection, the program prompts the user for input values and computes and displays the results based on the chosen calculation.
+
+Custom Calculation Functions:
+---------------------------
+The program includes custom functions for performing the motion calculations. These functions encapsulate the mathematical formulas required for each calculation. The functions ensure code modularity and readability.
+
+Overall, this program offers a user-friendly interface for solving physics problems related to motion. Users can select the type of motion and the specific calculation they want to perform, input the necessary data, and receive calculated results. The program's structured approach and use of custom functions make it an effective tool for learning and solving motion-related problems.
+-----------------------------------------------------------------------
+
+
