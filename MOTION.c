@@ -150,3 +150,88 @@ int main(void)
     return (0);
 }
 
+int distance(int u, int t, int a)
+{
+    int resulting_distance;
+    resulting_distance = u * t + (0.5 * a * t * t);
+    return (resulting_distance);
+}
+
+int velocity(int u, int t, int a)
+{
+    int resulting_velocity;
+    resulting_velocity = u + (a *t);  
+    return (resulting_velocity);
+}
+
+int acceleration(int v, int u, int t)
+{
+    int resulting_acceleration;
+    resulting_acceleration = (v - u)/t;
+    return (resulting_acceleration);
+}
+int time(int v, int u, int a)
+{
+    int resulting_time;
+    resulting_time = (v - u) / a;
+    return (resulting_time);
+}
+
+int initvelocity(int v, int a, int t)
+{
+    int resulting_initial_velocity;
+    resulting_initial_velocity = v - (a * t);
+    return (resulting_initial_velocity);
+}
+
+int maxrange(int u)
+{
+    int r;
+    r = (u * u) / 10;
+    return (r);
+}
+
+int horizontalrange(int u, int angle) 
+{
+    double theta = angle * M_PI / 180.0;
+    int g = 10; // Acceleration due to gravity
+    int range = (int)((u * u * sin(2 * theta)) / g);
+    return range;
+}
+
+int timeof_flight(int u, int angle) 
+{
+    double g = 10;
+    double radian_angle = angle * M_PI / 180.0;
+    double t_flight = (2.0 * u * sin(radian_angle)) / g;
+    int time_integer = (int)(t_flight + 0.5);
+
+    return (time_integer);
+}
+
+int timeto_reachmax(int u, int angle)
+{
+    double g = 10;
+    double radian_angle = angle * M_PI / 180.0;
+    double t_flight = ( u * sin(radian_angle)) / g;
+    int time_integer = (int)(t_flight + 0.5);
+
+    return (time_integer);
+}
+
+
+int height(int u, int angle)
+{
+    double angle_in_radians = angle * M_PI / 180.0;
+
+    double h = (u * u * sin(angle_in_radians) * sin(angle_in_radians)) / (2 * 10);
+    
+    int height_as_int = (int)h;
+
+    return (height_as_int);
+}
+
+
+
+
+
