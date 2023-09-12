@@ -195,7 +195,7 @@ int horizontalrange(int u, int angle)
 {
     double theta = angle * M_PI / 180.0;
     int g = 10; // Acceleration due to gravity
-    int range = (int)((u * u * sin(2 * theta)) / g);
+    int range = (int)(((float)u * (float)u * sin(2 * theta)) / g);
     return range;
 }
 
@@ -204,7 +204,7 @@ int timeof_flight(int u, int angle)
     double g = 10;
     double radian_angle = angle * M_PI / 180.0;
     double t_flight = (2.0 * u * sin(radian_angle)) / g;
-    int time_integer = (int)(t_flight + 0.5);
+    int time_integer = (int)(t_flight + 0.5));
 
     return (time_integer);
 }
@@ -213,7 +213,7 @@ int timeto_reachmax(int u, int angle)
 {
     double g = 10;
     double radian_angle = angle * M_PI / 180.0;
-    double t_flight = ( u * sin(radian_angle)) / g;
+    double t_flight = round((u * sin(radian_angle)) / g);
     int time_integer = (int)(t_flight + 0.5);
 
     return (time_integer);
@@ -224,14 +224,9 @@ int height(int u, int angle)
 {
     double angle_in_radians = angle * M_PI / 180.0;
 
-    double h = (u * u * sin(angle_in_radians) * sin(angle_in_radians)) / (2 * 10);
-    
+    double h = round((u * u * sin(angle_in_radians) * sin(angle_in_radians)) / (2.0 * 10.0));
+
     int height_as_int = (int)h;
 
     return (height_as_int);
 }
-
-
-
-
-
